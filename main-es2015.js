@@ -1158,7 +1158,11 @@ let MsHttpService = class MsHttpService {
         this.http = http;
         this.socketService = socketService;
         //Api URL  
+<<<<<<< HEAD
         this.apiUrl = 'http://api.resfeber.online/api/v1/';
+=======
+        this.apiUrl = 'http://localhost:3000/api/v1/';
+>>>>>>> 1a43f279ded0b7f14bbfdc350c1759190e5ef00b
         this.getUserInfoFromLocalStorage = () => {
             return JSON.parse(localStorage.getItem('userData'));
         }; // Get User info ends here
@@ -1258,7 +1262,11 @@ __webpack_require__.r(__webpack_exports__);
 
 let MsSocketService = class MsSocketService {
     constructor() {
+<<<<<<< HEAD
         this.url = "http://api.resfeber.online";
+=======
+        this.url = "http://localhost:3000";
+>>>>>>> 1a43f279ded0b7f14bbfdc350c1759190e5ef00b
         this.getOwnUserId = (userId) => {
             return rxjs__WEBPACK_IMPORTED_MODULE_3__["Observable"].create((observer) => {
                 this.socket.on(userId, data => {
